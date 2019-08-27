@@ -6,8 +6,6 @@ A jazz festival scraper test
 
 Just run npm install to download all the dependencies
 
-Say what the step will be
-
 ```
 npm install
 ```
