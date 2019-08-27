@@ -20,7 +20,7 @@ module.exports = {
                     //in this case get the first concert since the class is different
                     let concert1 = {
                         name:$(this).find('.concert1_jour').find('.titresoiree').text(),
-                        img:$(this).find('.concert1_jour').find('img').attr('src'),
+                        img:'http://www.jazzinmarciac.co.uk/'+$(this).find('.concert1_jour').find('img').attr('src'),
                     }
                     gigData.concerts.push(concert1);
                     //get all the remaining concerts
@@ -28,7 +28,7 @@ module.exports = {
                         $(this).find('.concert_jour').each(function(j,data){
                             let value = {
                                 name:$(this).find('.titresoiree').text(),
-                                img:$(this).find('img').attr('src')
+                                img:'http://www.jazzinmarciac.co.uk/'+$(this).find('img').attr('src')
                             };
                             gigData.concerts.push(value);
                         });
