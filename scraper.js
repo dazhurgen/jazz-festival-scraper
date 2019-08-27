@@ -25,7 +25,6 @@ module.exports = {
                         members:''
                     }
                     let objectId = $(this).attr('id');
-                    concert1.singers = objectId;
                     gigData.concerts.push(concert1);
                     //get all the remaining concerts
                     if($(this).find('.concert_jour').find('.titresoiree')[0] != 'undefined'){
@@ -38,8 +37,8 @@ module.exports = {
                             gigData.concerts.push(value);
                         });
                     }
-                   //gigs.push(gigData);
                    var nameAtt = objectId.replace('test','');
+                   //get the band members
                    $('.ligne_detail2_jour', html).each(function(i, elem) {
                          if($(this).parent().attr('name') == nameAtt){
                              let counter = 0;
