@@ -19,3 +19,6 @@ Afters server runs on port 3000, in your browser go just type the following addr
 ```
 http://localhost:3000/get/jazzfestival/list
 ```
+## Example result
+
+Please read https://github.com/dazhurgen/jazz-festival-scraper/blob/master/result.txt to see an example result of the raw data scraped
